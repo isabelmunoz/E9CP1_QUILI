@@ -22,5 +22,14 @@
 		</ul>
 	</nav>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+	 $(document).ready(function(){
+	$("li:nth-child(4)").append('<ul><li><a href="#">link 4.a</a></li></ul>');
+    $("li:nth-child(4)").before('<li><a href="#">link 3.5</a></li>');
+    $("li:nth-child(6)").prepend('😎');
+    $("li:nth-child(6)").after('🙂');
+});
+</script>
 </body>
 </html>
