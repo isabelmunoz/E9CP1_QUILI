@@ -94,5 +94,20 @@
     </li>
   </ul>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+      $(".social__like").click(function(event){
+        $(this).toggleClass("social__like--clicked");
+        event.preventDefault();
+      })
+      $(".social__link").click(function(event){
+        var alt = $(this).parent().parent().siblings(".meals__img").attr('alt')
+       alert(alt); 
+       event.preventDefault();
+      })
+
+
+</script>
+
 </body>
 </html>
